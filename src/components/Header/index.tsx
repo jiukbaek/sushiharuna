@@ -7,6 +7,9 @@ const HeaderWrapper = styled.div`
   width: 100%;
   position: fixed;
   z-index: 10;
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+  }
 `;
 
 const HeaderInner = styled.div`
@@ -21,6 +24,7 @@ const HeaderLogo = styled.div`
   display: flex;
   align-items: center;
   padding-left: 10px;
+  cursor: pointer;
 `;
 
 const Header = () => (
