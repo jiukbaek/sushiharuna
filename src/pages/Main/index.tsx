@@ -3,6 +3,8 @@ import * as React from "react";
 import styled from "styled-components";
 
 import MainBanner from "components/MainBanner";
+import Text from "components/Text";
+import EmptyBox from "components/EmptyBox";
 
 declare let kakao: any;
 
@@ -29,19 +31,6 @@ const MainContentWrapper = styled.div`
 const SushiIcon = styled.img`
   width: 28vw;
   margin-bottom: 5px;
-`;
-
-const Text = styled.div`
-  font-size: ${props => (props.size ? props.size : "5vw")};
-  font-weight: 600;
-  color: ${props => (props.color ? props.color : "rgb(53,7,7)")};
-  font-family: "TlabShin", sans serif;
-  margin: ${props => (props.margin ? props.margin : "0 0")};
-`;
-
-const EmptyBox = styled.div`
-  width: ${props => (props.width ? props.width : "100%")};
-  height: ${props => (props.height ? props.height : "0px")};
 `;
 
 const InfoLogoWrapper = styled.div`

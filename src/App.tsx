@@ -7,6 +7,7 @@ import Main from "./pages/Main";
 import About from "./pages/About";
 
 import Header from "components/Header";
+import Footer from "components/Footer";
 
 const RootWrapper = styled.div`
   width: 100%;
@@ -33,6 +34,7 @@ class App extends React.Component {
               <Route path="/about" component={About}></Route>
               <Route path="/" component={Main}></Route>
             </Switch>
+            <Footer />
           </RootWrapper>
         </Router>
       </>

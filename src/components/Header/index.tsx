@@ -26,7 +26,11 @@ const HeaderLogo = styled.div`
 const Header = () => (
   <HeaderWrapper>
     <HeaderInner>
-      <HeaderLogo>
+      <HeaderLogo
+        onClick={() => {
+          location.href = "/";
+        }}
+      >
         <img src="../source/images/logo_nn.png" />
       </HeaderLogo>
       <MobileMenu />
