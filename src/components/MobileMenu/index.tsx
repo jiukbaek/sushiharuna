@@ -80,6 +80,10 @@ const SideMenuColumn = styled.li`
   color: rgb(209, 164, 17);
 `;
 
+const scrollTop = () => {
+  window.scroll(0, 0);
+};
+
 const MobileMenu = () => (
   <MenuWrapper className="mobileMenu">
     <ToggleCheckBox type="checkbox" id="menuToggle" className="mobileMenu" />
@@ -87,10 +91,10 @@ const MobileMenu = () => (
     <MenuSpan className="mobileMenu"></MenuSpan>
     <MenuSpan className="mobileMenu"></MenuSpan>
     <SideMenuWrapper className="mobileMenu">
-      <SideMenuColumn className="mobileMenu">
+      <SideMenuColumn className="mobileMenu" onClick={scrollTop}>
         <Link to="/">HOME</Link>
       </SideMenuColumn>
-      <SideMenuColumn className="mobileMenu">
+      <SideMenuColumn className="mobileMenu" onClick={scrollTop}>
         <Link to="/about">ABOUT</Link>
       </SideMenuColumn>
       {/* <SideMenuColumn className="mobileMenu">MENU</SideMenuColumn>

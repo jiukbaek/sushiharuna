@@ -27,7 +27,7 @@ class App extends React.Component {
     return (
       <>
         <GlobalStyles />
-        <Router>
+        <Router onUpdate={() => console.log("1234")}>
           <RootWrapper onClick={MobileMenuToggle}>
             <Header />
             <Switch>

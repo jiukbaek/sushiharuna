@@ -89,6 +89,14 @@ const LocationWrapper = styled.div`
 const MapBox = styled.div`
   width: 92vw;
   height: 92vw;
+  background-image: url("../source/images/sushiharuna_map.png");
+  background-size: cover;
+  background-position: center center;
+`;
+
+const MapImage = styled.img`
+  width: 100%;
+  height: 100%;
 `;
 
 const Main = () => {
@@ -176,7 +184,9 @@ const Main = () => {
           <Text size="8vw" margin="8px 0px">
             오시는길
           </Text>
-          <MapBox id="map"></MapBox>
+          <MapBox id="map">
+            {/* <MapImage src="../source/images/sushiharuna_map.png" /> */}
+          </MapBox>
         </LocationWrapper>
       </MainSection>
     </MainWrapper>
