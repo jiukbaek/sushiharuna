@@ -6,6 +6,9 @@ import EmptyBox from "components/EmptyBox";
 const FooterWrapper = styled.div`
   width: 100vw;
   background: rgb(45, 45, 47);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const FooterContentWrapper = styled.div`
@@ -17,7 +20,7 @@ const FooterContentWrapper = styled.div`
 `;
 
 const FooterLogo = styled.img`
-  width: 15vw;
+  width: 120px;
   margin: 10px 0px;
 `;
 
