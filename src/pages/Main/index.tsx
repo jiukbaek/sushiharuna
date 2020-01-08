@@ -139,9 +139,9 @@ const Main = () => {
               </Text>
               <EmptyBox height="1px" width="5vw" />
               <Text size="4vw">
-                break time
+                last order
                 <br />
-                14:00~17:00
+                21:00
               </Text>
             </FlexDirectionRow>
           </GuideWrapper>
