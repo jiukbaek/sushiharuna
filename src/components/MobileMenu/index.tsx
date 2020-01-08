@@ -93,8 +93,8 @@ const MobileMenu = () => (
       <SideMenuColumn className="mobileMenu">
         <Link to="/about">ABOUT</Link>
       </SideMenuColumn>
-      <SideMenuColumn className="mobileMenu">MENU</SideMenuColumn>
-      <SideMenuColumn className="mobileMenu">LOCATION</SideMenuColumn>
+      {/* <SideMenuColumn className="mobileMenu">MENU</SideMenuColumn>
+      <SideMenuColumn className="mobileMenu">LOCATION</SideMenuColumn> */}
     </SideMenuWrapper>
   </MenuWrapper>
 );
