@@ -48,7 +48,7 @@ const AboutText = styled.div`
   font-weight: 700;
   text-shadow: 1px 1.5px 2px gray;
   font-size: 7vw;
-  margin-top: 3vw;
+  margin-top: 4vw;
 `;
 
 const About = () => {
@@ -63,25 +63,25 @@ const About = () => {
             스시하루나
           </Text>
           <EmptyBox height="4vw" />
-          <Text size="4vw" margin="4px 0px" color="rgb(90,90,90)">
+          <Text size="4vw" margin="6px 0px" color="rgb(90,90,90)">
             안녕하십니까, 스시하루나 대표 최민철 입니다.
           </Text>
-          <Text size="4vw" margin="4px 0px" color="rgb(90,90,90)">
+          <Text size="4vw" margin="6px 0px" color="rgb(90,90,90)">
             스시하루나는 숙성과 절임을 통해 생선의 맛을 극대화 시켜
           </Text>
-          <Text size="4vw" margin="4px 0px" color="rgb(90,90,90)">
+          <Text size="4vw" margin="6px 0px" color="rgb(90,90,90)">
             생선 고유의 맛을 이끌어 내는데 중점을 두고있습니다.
           </Text>
-          <Text size="4vw" margin="4px 0px" color="rgb(90,90,90)">
+          <Text size="4vw" margin="6px 0px" color="rgb(90,90,90)">
             각 재료별 최상의 맛을 선보이기 위하여
           </Text>
-          <Text size="4vw" margin="4px 0px" color="rgb(90,90,90)">
+          <Text size="4vw" margin="6px 0px" color="rgb(90,90,90)">
             다양한 방법을 끊임없이 연구하고있습니다.
           </Text>
-          <Text size="4vw" margin="4px 0px" color="rgb(90,90,90)">
+          <Text size="4vw" margin="6px 0px" color="rgb(90,90,90)">
             제철에 따라, 재료에 따라 그리고 숙성에 따라
           </Text>
-          <Text size="4vw" margin="4px 0px" color="rgb(90,90,90)">
+          <Text size="4vw" margin="6px 0px" color="rgb(90,90,90)">
             색다른 식감과 풍미를 느껴보시길 바랍니다.
           </Text>
         </AboutContentWrapper>
@@ -91,20 +91,20 @@ const About = () => {
           <AboutImage src="../source/images/about1.png" />
           <AboutTextWrapper>
             <AboutText>大道無門</AboutText>
-            <Text size="4vw" margin="4px 0px" color="black">
+            <Text size="4vw" margin="6px 0px" color="black">
               대도무문 : 정도에는 거칠것이 없다
             </Text>
             <EmptyBox height="2vw" />
-            <Text size="4vw" margin="4px 0px" color="rgb(90,90,90)">
+            <Text size="4vw" margin="6px 0px" color="rgb(90,90,90)">
               스승의 신념을 이어받아
             </Text>
-            <Text size="4vw" margin="4px 0px" color="rgb(90,90,90)">
+            <Text size="4vw" margin="6px 0px" color="rgb(90,90,90)">
               스시 한 점 마다
             </Text>
-            <Text size="4vw" margin="4px 0px" color="rgb(90,90,90)">
+            <Text size="4vw" margin="6px 0px" color="rgb(90,90,90)">
               거짓없이
             </Text>
-            <Text size="4vw" margin="4px 0px" color="rgb(90,90,90)">
+            <Text size="4vw" margin="6px 0px" color="rgb(90,90,90)">
               정직함을 담아 요리합니다.
             </Text>
           </AboutTextWrapper>
@@ -118,24 +118,24 @@ const About = () => {
               size="7vw"
               color="black"
               shadow="1px 1.5px 2px gray"
-              margin="3vw 0px"
+              margin="4vw 0px"
             >
               오감
             </Text>
             <EmptyBox height="2vw" />
-            <Text size="4vw" margin="4px 0px" color="rgb(90,90,90)">
+            <Text size="4vw" margin="6px 0px" color="rgb(90,90,90)">
               스시하루나만의 숙성법으로
             </Text>
-            <Text size="4vw" margin="4px 0px" color="rgb(90,90,90)">
+            <Text size="4vw" margin="6px 0px" color="rgb(90,90,90)">
               생선의 단맛, 신맛, 쓴맛, 향을 극대화 시켜
             </Text>
-            <Text size="4vw" margin="4px 0px" color="rgb(90,90,90)">
+            <Text size="4vw" margin="6px 0px" color="rgb(90,90,90)">
               사람의 오감을 예민하게 만들어
             </Text>
-            <Text size="4vw" margin="4px 0px" color="rgb(90,90,90)">
+            <Text size="4vw" margin="6px 0px" color="rgb(90,90,90)">
               "더 먹고싶다!"
             </Text>
-            <Text size="4vw" margin="4px 0px" color="rgb(90,90,90)">
+            <Text size="4vw" margin="6px 0px" color="rgb(90,90,90)">
               라는 생각이 들게끔합니다.
             </Text>
           </AboutTextWrapper>
