@@ -156,7 +156,7 @@ const About = () => {
           <AboutImage src="../source/images/about1.png" />
           <AboutTextWrapper>
             <AboutText>大道無門</AboutText>
-            <Text size="4vw" margin="6px 0px" color="black" pcSize="2vw">
+            <Text size="4vw" margin="1.2vw 0px" color="black" pcSize="2vw">
               대도무문 : 정도에는 거칠것이 없다
             </Text>
             <EmptyBox height="2vw" />

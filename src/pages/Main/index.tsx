@@ -326,6 +326,7 @@ const Main = () => {
               pcSize="3vw"
               pcMargin="40px 0px"
               onClick={() => {
+                return;
                 document.location.href = "tel:010-3333-9242";
               }}
             >
