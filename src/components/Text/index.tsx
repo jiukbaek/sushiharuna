@@ -9,6 +9,7 @@ interface TextProps {
   margin?: string;
   pcMargin?: string;
   shadow?: string;
+  className?: string;
   onClick?: any;
   children: any;
 }
@@ -36,6 +37,7 @@ const Text = ({
   shadow = "",
   pcSize = "",
   pcMargin = "",
+  className,
   onClick,
   children
 }: TextProps) => {
@@ -48,6 +50,7 @@ const Text = ({
       shadow={shadow}
       pcMargin={pcMargin}
       onClick={onClick}
+      className={className}
     >
       {children}
     </TextComponent>

@@ -91,6 +91,10 @@ const GuideWrapper = styled.div`
     .pcBR {
       display: block;
     }
+
+    .pcText {
+      line-height: 2.4vw;
+    }
   }
 `;
 
@@ -284,8 +288,13 @@ const Main = () => {
             >
               하루나 오마카세 ... 50,000
             </Text>
-            <Text size="3vw" pcSize="1.6vw" pcMargin="50px 0px">
-              <Highlight size="2.2vw">오마카세</Highlight>란 '맡긴다' 라는
+            <Text
+              size="3vw"
+              pcSize="1.7vw"
+              pcMargin="50px 0px"
+              className="pcText"
+            >
+              <Highlight size="2.3vw">오마카세</Highlight>란 '맡긴다' 라는
               <br className="pcBR" /> 뜻으로, 손님은 요리사에게
               <br />
               온전히 메뉴를 맡기고 요리사는 <br className="pcBR" />
@@ -301,10 +310,11 @@ const Main = () => {
             <Text
               size="5vw"
               margin="10px 0px"
-              pcSize="1.9vw"
+              pcSize="2vw"
               pcMargin="85px 0px"
+              className="pcText"
             >
-              <Highlight size="2.3vw">스시하루나</Highlight>
+              <Highlight size="2.4vw">스시하루나</Highlight>
               는 <br className="pcBR" />
               예약제로 운영됩니다.
               <br />
