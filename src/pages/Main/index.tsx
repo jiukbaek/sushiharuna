@@ -311,7 +311,14 @@ const Main = () => {
               반드시 예약 후 <br className="pcBR" />
               방문 부탁드립니다.
             </Text>
-            <Text size="5vw" pcSize="3vw" pcMargin="40px 0px">
+            <Text
+              size="5vw"
+              pcSize="3vw"
+              pcMargin="40px 0px"
+              onClick={() => {
+                document.location.href = "tel:010-3333-9242";
+              }}
+            >
               010.3333.9242
             </Text>
           </GuideWrapper>
