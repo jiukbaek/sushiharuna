@@ -178,7 +178,7 @@ const LocationTextWrapper = styled.div`
       width: 2vw;
       height: 2vw;
       margin-right: 1vw;
-      margin-bottom: -1vw;
+      margin-bottom: -0.5vw;
     }
   }
 `;
