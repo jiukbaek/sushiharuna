@@ -4,6 +4,7 @@ import styled from "styled-components";
 import EmptyBox from "components/EmptyBox";
 
 const FooterWrapper = styled.div`
+  max-width: 100%;
   width: 100vw;
   background: rgb(45, 45, 47);
   display: flex;
@@ -20,8 +21,8 @@ const FooterContentWrapper = styled.div`
 `;
 
 const FooterLogo = styled.img`
-  width: 120px;
-  margin: 10px 0px;
+  width: 100px;
+  margin: 20px 0px;
 `;
 
 const FooterText = styled.div`

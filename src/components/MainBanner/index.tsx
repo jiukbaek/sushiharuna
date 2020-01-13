@@ -5,7 +5,7 @@ import device from "components/device";
 const MainBannerWrapper = styled.div`
   width: 100%;
   background-image: url("../source/images/banner_m.jpg");
-  @media ${device["s"]} {
+  @media ${device["mobile_wide"]} {
     background-image: url("../source/images/banner_ver.1.jpg");
   }
   background-size: cover;
@@ -25,6 +25,10 @@ const MainBannerTextWrapper = styled.div`
 `;
 const MainBannerMainText = styled.div`
   font-size: 35vw;
+  @media ${device["pc"]} {
+    font-size: 19vw;
+    font-weight: 600;
+  }
   font-weight: 700;
   color: rgb(209, 164, 17);
   text-align: center;
@@ -32,13 +36,20 @@ const MainBannerMainText = styled.div`
 `;
 const MainBannerSubText = styled.div`
   font-size: 10vw;
+  @media ${device["pc"]} {
+    font-size: 7vw;
+    font-weight: 550;
+  }
   font-weight: 700;
   color: rgb(209, 164, 17);
   margin-top: -10vw;
 `;
-const MainBannerBlck = styled.div`
+const MainBannerBlack = styled.div`
   width: 100%;
   height: 100vh;
+  @media ${device["pc"]} {
+    height: 120vh;
+  }
   background: rgb(0, 0, 0, 0.3);
 `;
 
@@ -48,7 +59,7 @@ const MainBanner = () => (
       <MainBannerMainText>Sushi Haruna</MainBannerMainText>
       <MainBannerSubText>Sushi Omakase</MainBannerSubText>
     </MainBannerTextWrapper>
-    <MainBannerBlck></MainBannerBlck>
+    <MainBannerBlack></MainBannerBlack>
   </MainBannerWrapper>
 );
 

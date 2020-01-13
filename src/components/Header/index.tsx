@@ -1,14 +1,30 @@
 import * as React from "react";
 import styled from "styled-components";
+import device from "components/device";
 
 import MobileMenu from "components/MobileMenu";
+import Menu from "components/Menu";
 
 const HeaderWrapper = styled.div`
   width: 100%;
   position: fixed;
   z-index: 10;
+  #pcMenu {
+    display: none;
+  }
+  #mobileMenu {
+    display: block;
+  }
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     /* IE10+ CSS styles go here */
+  }
+  @media ${device["pc"]} {
+    #pcMenu {
+      display: block;
+    }
+    #mobileMenu {
+      display: none;
+    }
   }
 `;
 
@@ -38,6 +54,7 @@ const Header = () => (
         <img src="../source/images/logo_nn.png" />
       </HeaderLogo>
       <MobileMenu />
+      <Menu />
     </HeaderInner>
   </HeaderWrapper>
 );

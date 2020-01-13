@@ -16,6 +16,10 @@ const AboutBannerBlck = styled.div`
   width: 100%;
   height: 80vh;
   background: rgb(0, 0, 0, 0.3);
+
+  @media ${device["pc"]} {
+    height: 100vh;
+  }
 `;
 
 const AboutBanner = () => (

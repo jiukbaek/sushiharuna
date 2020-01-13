@@ -1,10 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
+import device from "components/device";
 
 interface TextProps {
   size?: string;
+  pcSize?: string;
   color?: string;
   margin?: string;
+  pcMargin?: string;
   shadow?: string;
   children: any;
 }
@@ -16,6 +19,13 @@ const TextComponent = styled.div`
   font-family: "TlabShin", sans serif;
   margin: ${props => (props.margin ? props.margin : "0 0")};
   text-shadow: ${props => (props.shadow ? props.shadow : "none")};
+  @media ${device["pc"]} {
+    font-size: ${props =>
+      props.pcSize ? props.pcSize : props.size ? props.size : "5vw"};
+
+    margin: ${props =>
+      props.pcMargin ? props.pcMargin : props.margin ? props.margin : "0 0"};
+  }
 `;
 
 const Text = ({
@@ -23,10 +33,19 @@ const Text = ({
   color = "",
   margin = "",
   shadow = "",
+  pcSize = "",
+  pcMargin = "",
   children
 }: TextProps) => {
   return (
-    <TextComponent size={size} color={color} margin={margin} shadow={shadow}>
+    <TextComponent
+      size={size}
+      pcSize={pcSize}
+      color={color}
+      margin={margin}
+      shadow={shadow}
+      pcMargin={pcMargin}
+    >
       {children}
     </TextComponent>
   );

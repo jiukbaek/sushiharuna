@@ -85,7 +85,7 @@ const scrollTop = () => {
 };
 
 const MobileMenu = () => (
-  <MenuWrapper className="mobileMenu">
+  <MenuWrapper className="mobileMenu" id="mobileMenu">
     <ToggleCheckBox type="checkbox" id="menuToggle" className="mobileMenu" />
     <MenuSpan className="mobileMenu"></MenuSpan>
     <MenuSpan className="mobileMenu"></MenuSpan>
