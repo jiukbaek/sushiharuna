@@ -337,12 +337,12 @@ const Main = () => {
       </MainSection>
       <MainSection background="rgb(45,45,47)">
         <PhotoWrapper>
-          <SushiPhoto src="../source/images/sushi_1.jpg" />
-          <SushiPhoto src="../source/images/sushi_4.jpg" />
-          <SushiPhoto src="../source/images/sushi_3.jpg" />
-          <SushiPhoto src="../source/images/sushi_5.jpg" />
-          <SushiPhoto src="../source/images/sushi_2.jpg" />
           <SushiPhoto src="../source/images/sushi_6.jpg" />
+          <SushiPhoto src="../source/images/sushi_5.jpg" />
+          <SushiPhoto src="../source/images/sushi_3.jpg" />
+          <SushiPhoto src="../source/images/sushi_2.jpg" />
+          <SushiPhoto src="../source/images/sushi_4.jpg" />
+          <SushiPhoto src="../source/images/sushi_1.jpg" />
           <SushiPhoto src="../source/images/sushi_7.jpg" className="pcSushi" />
           <SushiPhoto src="../source/images/sushi_8.jpg" className="pcSushi" />
         </PhotoWrapper>
