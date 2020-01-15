@@ -47,7 +47,7 @@ const FishGuideWrapper = styled.div`
   align-items: center;
   padding: 0px 1vw;
   margin: 5vw 0;
-  .fish5 {
+  .fishHeight {
     height: 10vw;
   }
   @media ${device["pc"]} {
@@ -113,7 +113,10 @@ const Menu = () => {
             재료소개
           </Text>
           <FishGuideWrapper>
-            <FishImage src="../source/images/fish8.png" />
+            <FishImage
+              src="../source/images/fish9.png"
+              className="fishHeight"
+            />
             <FishTextWrapper>
               <Text color="black" size="6vw" pcSize="3vw" margin="1vw 0">
                 고등어
@@ -175,7 +178,10 @@ const Menu = () => {
             </FishTextWrapper>
           </FishGuideWrapper>
           <FishGuideWrapper>
-            <FishImage src="../source/images/fish5.png" className="fish5" />
+            <FishImage
+              src="../source/images/fish5.png"
+              className="fishHeight"
+            />
             <FishTextWrapper>
               <Text color="black" size="6vw" pcSize="3vw">
                 삼치

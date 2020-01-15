@@ -77,6 +77,7 @@ const GuideWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   background-image: ${props => (props.url ? props.url : "")};
+
   margin: 4vw 0px;
   padding: 4vw 0px;
 
@@ -87,7 +88,7 @@ const GuideWrapper = styled.div`
   @media ${device["pc"]} {
     margin: 4vw 1.9vw;
     padding: 7vw 0px;
-
+    background-size: cover;
     .pcBR {
       display: block;
     }
@@ -308,7 +309,7 @@ const Main = () => {
               예약문의
             </Text>
             <Text
-              size="5vw"
+              size="4.2vw"
               margin="10px 0px"
               pcSize="2vw"
               pcMargin="85px 0px"
@@ -336,14 +337,14 @@ const Main = () => {
       </MainSection>
       <MainSection background="rgb(45,45,47)">
         <PhotoWrapper>
-          <SushiPhoto src="../source/images/sushi1.png" />
-          <SushiPhoto src="../source/images/sushi6.jpg" />
-          <SushiPhoto src="../source/images/sushi8.jpg" />
-          <SushiPhoto src="../source/images/sushi2.png" />
-          <SushiPhoto src="../source/images/sushi3.png" />
-          <SushiPhoto src="../source/images/sushi7.jpg" />
-          <SushiPhoto src="../source/images/sushi4.png" className="pcSushi" />
-          <SushiPhoto src="../source/images/sushi5.png" className="pcSushi" />
+          <SushiPhoto src="../source/images/sushi_1.jpg" />
+          <SushiPhoto src="../source/images/sushi_4.jpg" />
+          <SushiPhoto src="../source/images/sushi_3.jpg" />
+          <SushiPhoto src="../source/images/sushi_5.jpg" />
+          <SushiPhoto src="../source/images/sushi_2.jpg" />
+          <SushiPhoto src="../source/images/sushi_6.jpg" />
+          <SushiPhoto src="../source/images/sushi_7.jpg" className="pcSushi" />
+          <SushiPhoto src="../source/images/sushi_8.jpg" className="pcSushi" />
         </PhotoWrapper>
       </MainSection>
       <MainSection>
