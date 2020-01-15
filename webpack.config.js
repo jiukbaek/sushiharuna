@@ -32,11 +32,6 @@ module.exports = {
         "X-Requested-With, content-type, Authorization"
     }
   },
-  optimization: {
-    splitChunks: {
-      chunks: "all"
-    }
-  },
   plugins: [
     new HTMLWebpackPlugin({
       template: "./src/index.html"

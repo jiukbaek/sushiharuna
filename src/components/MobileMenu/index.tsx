@@ -84,6 +84,11 @@ const scrollTop = () => {
   window.scroll(0, 0);
 };
 
+const MobileMenuExit = (e: Event) => {
+  const toggle = document.querySelector("#menuToggle") as HTMLInputElement;
+  toggle.checked = false;
+};
+
 const MobileMenu = () => (
   <MenuWrapper className="mobileMenu" id="mobileMenu">
     <ToggleCheckBox type="checkbox" id="menuToggle" className="mobileMenu" />
@@ -92,17 +97,17 @@ const MobileMenu = () => (
     <MenuSpan className="mobileMenu"></MenuSpan>
     <SideMenuWrapper className="mobileMenu">
       <SideMenuColumn className="mobileMenu" onClick={scrollTop}>
-        <Link to="/" className="mobileMenu">
+        <Link to="/" className="mobileMenu" onClick={MobileMenuExit}>
           HOME
         </Link>
       </SideMenuColumn>
       <SideMenuColumn className="mobileMenu" onClick={scrollTop}>
-        <Link to="/about" className="mobileMenu">
+        <Link to="/about" className="mobileMenu" onClick={MobileMenuExit}>
           ABOUT
         </Link>
       </SideMenuColumn>
       <SideMenuColumn className="mobileMenu" onClick={scrollTop}>
-        <Link to="/menu" className="mobileMenu">
+        <Link to="/menu" className="mobileMenu" onClick={MobileMenuExit}>
           MENU
         </Link>
       </SideMenuColumn>
