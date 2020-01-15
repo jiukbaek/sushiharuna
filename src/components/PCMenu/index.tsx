@@ -33,7 +33,9 @@ const Menu = () => {
         <MenuItem onClick={scrollTop}>
           <Link to="/about">ABOUT</Link>
         </MenuItem>
-        <MenuItem>MENU</MenuItem>
+        <MenuItem onClick={scrollTop}>
+          <Link to="/menu">MENU</Link>
+        </MenuItem>
       </MenuItems>
     </MenuWrapper>
   );

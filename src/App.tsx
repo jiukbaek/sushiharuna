@@ -5,6 +5,7 @@ import GlobalStyles from "./components/GlobalStyles";
 
 import Main from "./pages/Main";
 import About from "./pages/About";
+import Menu from "./pages/Menu";
 
 import Header from "components/Header";
 import Footer from "components/Footer";
@@ -28,10 +29,14 @@ class App extends React.Component {
       <>
         <GlobalStyles />
         <Router>
-          <RootWrapper onClick={MobileMenuToggle}>
+          <RootWrapper
+            onClick={MobileMenuToggle}
+            onTouchStart={MobileMenuToggle}
+          >
             <Header />
             <Switch>
               <Route path="/about" component={About}></Route>
+              <Route path="/menu" component={Menu}></Route>
               <Route path="/" component={Main}></Route>
             </Switch>
             <Footer />

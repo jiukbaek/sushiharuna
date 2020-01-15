@@ -97,8 +97,9 @@ const MobileMenu = () => (
       <SideMenuColumn className="mobileMenu" onClick={scrollTop}>
         <Link to="/about">ABOUT</Link>
       </SideMenuColumn>
-      {/* <SideMenuColumn className="mobileMenu">MENU</SideMenuColumn>
-      <SideMenuColumn className="mobileMenu">LOCATION</SideMenuColumn> */}
+      <SideMenuColumn className="mobileMenu" onClick={scrollTop}>
+        <Link to="/menu">MENU</Link>
+      </SideMenuColumn>
     </SideMenuWrapper>
   </MenuWrapper>
 );
