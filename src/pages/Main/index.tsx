@@ -348,7 +348,13 @@ const Main = () => {
       </MainSection>
       <MainSection>
         <LocationWrapper>
-          <Text size="8vw" margin="8px 0px" pcSize="4vw" pcMargin="2vw 0vw">
+          <Text
+            color="black "
+            size="8vw"
+            margin="8px 0px"
+            pcSize="4vw"
+            pcMargin="2vw 0vw"
+          >
             오시는길
           </Text>
           <EmptyBox width="0px" height="0px" pcWidth="1px" pcHeight="3vw" />
@@ -356,15 +362,15 @@ const Main = () => {
             {/* <MapImage src="../source/images/sushiharuna_map.png" /> */}
           </MapBox>
           <LocationTextWrapper>
-            <Text size="3vw" margin="1vw 0px" pcSize="2vw">
+            <Text color="black" size="3vw" margin="1vw 0px" pcSize="2vw">
               <img src="../source/images/map.png" alt="" />
               대구 동구 송라로 65 (신천동 733-1)
             </Text>
-            <Text size="3vw" margin="1vw 0px" pcSize="2vw">
+            <Text color="black" size="3vw" margin="1vw 0px" pcSize="2vw">
               <img src="../source/images/subway.png" alt="" />
               신천역 4번 출구에서 147m
             </Text>
-            <Text size="3vw" margin="1vw 0px" pcSize="2vw">
+            <Text color="black" size="3vw" margin="1vw 0px" pcSize="2vw">
               <img src="../source/images/bus.png" alt="" />
               410, 909, 동구2 (시청 방면) 신천역 하차 5m
             </Text>

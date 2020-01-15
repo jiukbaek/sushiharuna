@@ -9,6 +9,7 @@ import device from "components/device";
 
 const AboutWrapper = styled.div`
   width: 100vw;
+  padding-bottom: 15vw;
 `;
 
 const AboutSection = styled.div`
@@ -29,17 +30,21 @@ const AboutContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8vw 0;
+  padding: 15vw 0;
+  @media ${device["pc"]} {
+    padding: 8vw 0;
+  }
 `;
 
 const AboutContentDynamicWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8vw 0;
+  padding: 15vw 0;
 
   @media ${device["pc"]} {
     flex-direction: row;
+    padding: 8vw 0;
   }
 `;
 
@@ -62,7 +67,7 @@ const AboutText = styled.div`
   font-weight: 700;
   text-shadow: 1px 1.5px 2px gray;
   font-size: 7vw;
-  margin-top: 4vw;
+  margin-top: 6vw;
 
   @media ${device["pc"]} {
     font-size: 4vw;
