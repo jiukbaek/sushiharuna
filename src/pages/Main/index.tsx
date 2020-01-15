@@ -326,7 +326,6 @@ const Main = () => {
               pcSize="3vw"
               pcMargin="40px 0px"
               onClick={() => {
-                return;
                 document.location.href = "tel:010-3333-9242";
               }}
             >
@@ -338,13 +337,13 @@ const Main = () => {
       <MainSection background="rgb(45,45,47)">
         <PhotoWrapper>
           <SushiPhoto src="../source/images/sushi1.png" />
+          <SushiPhoto src="../source/images/sushi6.jpg" />
+          <SushiPhoto src="../source/images/sushi8.jpg" />
           <SushiPhoto src="../source/images/sushi2.png" />
           <SushiPhoto src="../source/images/sushi3.png" />
-          <SushiPhoto src="../source/images/sushi4.png" />
-          <SushiPhoto src="../source/images/sushi5.png" />
-          <SushiPhoto src="../source/images/sushi6.png" />
+          <SushiPhoto src="../source/images/sushi7.jpg" />
+          <SushiPhoto src="../source/images/sushi4.png" className="pcSushi" />
           <SushiPhoto src="../source/images/sushi5.png" className="pcSushi" />
-          <SushiPhoto src="../source/images/sushi6.png" className="pcSushi" />
         </PhotoWrapper>
       </MainSection>
       <MainSection>

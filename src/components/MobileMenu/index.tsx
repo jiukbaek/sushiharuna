@@ -92,13 +92,19 @@ const MobileMenu = () => (
     <MenuSpan className="mobileMenu"></MenuSpan>
     <SideMenuWrapper className="mobileMenu">
       <SideMenuColumn className="mobileMenu" onClick={scrollTop}>
-        <Link to="/">HOME</Link>
+        <Link to="/" className="mobileMenu">
+          HOME
+        </Link>
       </SideMenuColumn>
       <SideMenuColumn className="mobileMenu" onClick={scrollTop}>
-        <Link to="/about">ABOUT</Link>
+        <Link to="/about" className="mobileMenu">
+          ABOUT
+        </Link>
       </SideMenuColumn>
       <SideMenuColumn className="mobileMenu" onClick={scrollTop}>
-        <Link to="/menu">MENU</Link>
+        <Link to="/menu" className="mobileMenu">
+          MENU
+        </Link>
       </SideMenuColumn>
     </SideMenuWrapper>
   </MenuWrapper>

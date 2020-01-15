@@ -109,6 +109,23 @@ const Menu = () => {
       </MenuSection>
       <MenuSection>
         <MenuContentWrapper>
+          <Text size="8vw" pcSize="4vw" margin="4vw 0">
+            재료소개
+          </Text>
+          <FishGuideWrapper>
+            <FishImage src="../source/images/fish8.png" />
+            <FishTextWrapper>
+              <Text size="6vw" pcSize="3vw" margin="1vw 0">
+                고등어
+              </Text>
+              <Text size="4vw" pcSize="2vw">
+                기름이 꽉 찬 고등어를 소금과 식초에 절이는 시메 방법을 이용한 뒤
+                마지막으로 된장과 간장을 이용 하여 고급스런 감칠 맛을 내는데
+                주력 하였습니다. 보통 일주일에서 한달 사이 저온에서 조금씩 감칠
+                맛을 끌어 올려 내었습니다.
+              </Text>
+            </FishTextWrapper>
+          </FishGuideWrapper>
           <FishGuideWrapper>
             <FishImage src="../source/images/fish1.png" />
             <FishTextWrapper>
@@ -196,6 +213,7 @@ const Menu = () => {
               </Text>
             </FishTextWrapper>
           </FishGuideWrapper>
+
           <FishGuideWrapper>
             <FishImage src="../source/images/fish8.png" />
             <FishTextWrapper>
