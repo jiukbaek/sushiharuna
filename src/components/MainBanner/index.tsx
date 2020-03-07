@@ -3,6 +3,7 @@ import styled from "styled-components";
 import device from "components/device";
 
 const MainBannerWrapper = styled.div`
+  position: relative;
   width: 100%;
   background-image: url("../source/images/banner_m.jpg");
   @media ${device["mobile_wide"]} {
@@ -18,10 +19,15 @@ const MainBannerWrapper = styled.div`
 
 const MainBannerTextWrapper = styled.div`
   position: absolute;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   font-family: "행복고흥L", sans serif;
+  top: 0;
+  left: 0;
 `;
 const MainBannerMainText = styled.div`
   font-size: 35vw;
@@ -50,7 +56,7 @@ const MainBannerBlack = styled.div`
   @media ${device["pc"]} {
     height: 120vh;
   }
-  background: rgb(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.3);
 `;
 
 const MainBanner = () => (
