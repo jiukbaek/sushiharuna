@@ -11,4 +11,3 @@ https://sushiharuna.com<br/>
 * styled-component
 * Webpack
 * AWS EC2
-* 
