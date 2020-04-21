@@ -4,7 +4,6 @@ https://sushiharuna.com<br/>
 **Sushiharuna**는 대구 스시전문점 "스시하루나"의 소개 웹페이지 입니다.
 
 ## 사용기술
-* * *
 
 * Typescript
 * Node(Express)
