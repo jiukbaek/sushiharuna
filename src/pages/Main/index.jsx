@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 
 import styled from "styled-components";
 
@@ -6,10 +6,6 @@ import MainBanner from "components/MainBanner";
 import Text from "components/Text";
 import EmptyBox from "components/EmptyBox";
 import device from "components/device";
-
-import * as $script from "scriptjs";
-
-declare let kakao: any;
 
 const MainWrapper = styled.div`
   width: 100vw;
@@ -20,7 +16,7 @@ const MainSection = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  background: ${props => (props.background ? props.background : "white")};
+  background: ${(props) => (props.background ? props.background : "white")};
   border: none;
 `;
 
@@ -31,7 +27,7 @@ const MainContentWrapper = styled.div`
   align-items: center;
   padding: 12vw 0;
 
-  @media ${device["pc"]} {
+  @media ${device.md} {
     padding: 6vw 0;
   }
 `;
@@ -40,7 +36,7 @@ const SushiIcon = styled.img`
   width: 28vw;
   margin-bottom: 5px;
 
-  @media ${device["pc"]} {
+  @media ${device.md} {
     width: 10vw;
   }
 `;
@@ -53,7 +49,7 @@ const BlackLogo = styled.img`
   width: 18vw;
   float: right;
 
-  @media ${device["pc"]} {
+  @media ${device.md} {
     width: 7vw;
   }
 `;
@@ -64,10 +60,10 @@ const MainGuideWrapper = styled.div`
   flex-direction: column;
   padding: 8vw 5vw;
 
-  @media ${device["pc"]} {
+  @media ${device.md} {
     flex-direction: row;
     justify-content: space-between;
-    padding 1.5vw 3vw;
+    padding: 1.5vw 3vw;
   }
 `;
 
@@ -76,7 +72,7 @@ const GuideWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: ${props => (props.url ? props.url : "")};
+  background-image: ${(props) => (props.url ? props.url : "")};
 
   margin: 4vw 0px;
   padding: 4vw 0px;
@@ -85,7 +81,7 @@ const GuideWrapper = styled.div`
     display: none;
   }
 
-  @media ${device["pc"]} {
+  @media ${device.md} {
     margin: 4vw 1.9vw;
     padding: 7vw 0px;
     background-size: cover;
@@ -103,7 +99,7 @@ const FlexDirectionRow = styled.div`
   display: flex;
   flex-direction: row;
 
-  @media ${device["pc"]} {
+  @media ${device.md} {
     flex-direction: column;
   }
 `;
@@ -119,7 +115,7 @@ const PhotoWrapper = styled.div`
     display: none;
   }
 
-  @media ${device["pc"]} {
+  @media ${device.md} {
     .pcSushi {
       display: block;
     }
@@ -131,7 +127,7 @@ const SushiPhoto = styled.img`
   height: 43vw;
   margin: 2vw 0;
 
-  @media ${device["pc"]} {
+  @media ${device.md} {
     width: 21vw;
     height: 22vw;
     margin: 1vw 0;
@@ -153,15 +149,15 @@ const MapBox = styled.div`
   background-size: cover;
   background-position: center center;
 
-  @media ${device["pc"]} {
+  @media ${device.md} {
     width: 70vw;
     height: 45vw;
   }
 `;
 
 const Highlight = styled.span`
-  @media ${device["pc"]} {
-    font-size: ${props => props.size};
+  @media ${device.md} {
+    font-size: ${(props) => props.size};
   }
 `;
 
@@ -176,7 +172,7 @@ const LocationTextWrapper = styled.div`
     margin-bottom: -0.6vw;
   }
 
-  @media ${device["pc"]} {
+  @media ${device.md} {
     width: 70vw;
 
     img {
@@ -187,32 +183,21 @@ const LocationTextWrapper = styled.div`
 `;
 
 const Main = () => {
-  const kakao_url =
-    "//dapi.kakao.com/v2/maps/sdk.js?appkey=9fd031c9094f4fa118f39f83b2683468";
+  useEffect(() => {
+    kakao.maps.load(() => {
+      const container = document.getElementById("map");
+      const options = {
+        center: new kakao.maps.LatLng(35.873001, 128.618234),
+        level: 3,
+      };
+      const map = new kakao.maps.Map(container, options);
+      const position = new kakao.maps.LatLng(35.873001, 128.618234);
+      const marker = new kakao.maps.Marker({ position });
 
-  React.useEffect(() => {
-    $script(kakao_url, () => {
-      this.kakao = kakao;
-      kakao.maps.load(() => {
-        let container = document.getElementById("map"); //지도를 담을 영역의 DOM 레퍼런스
-        let options = {
-          //   //지도를 생성할 때 필요한 기본 옵션
-          center: new this.kakao.maps.LatLng(35.873001, 128.618234), //지도의 중심좌표.
-          level: 3 //지도의 레벨(확대, 축소 정도)
-        };
-
-        let map = new this.kakao.maps.Map(container, options);
-
-        let markerPosition = new this.kakao.maps.LatLng(35.873001, 128.618234);
-
-        let marker = new this.kakao.maps.Marker({
-          position: markerPosition
-        });
-
-        marker.setMap(map);
-      });
+      marker.setMap(map);
     });
   });
+
   return (
     <MainWrapper>
       <MainSection>
@@ -359,9 +344,7 @@ const Main = () => {
             오시는길
           </Text>
           <EmptyBox width="0px" height="0px" pcWidth="1px" pcHeight="3vw" />
-          <MapBox id="map">
-            {/* <MapImage src="../source/images/sushiharuna_map.png" /> */}
-          </MapBox>
+          <MapBox id="map" />
           <LocationTextWrapper>
             <Text color="black" size="3vw" margin="1vw 0px" pcSize="2vw">
               <img src="../source/images/map.png" alt="" />

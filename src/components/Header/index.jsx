@@ -1,7 +1,8 @@
-import * as React from "react";
+import React from "react";
+import { useHistory } from "react-router";
 import styled from "styled-components";
-import device from "components/device";
 
+import device from "components/device";
 import MobileMenu from "components/MobileMenu";
 import PCMenu from "components/PCMenu";
 
@@ -21,7 +22,7 @@ const HeaderWrapper = styled.div`
     /* IE10+ CSS styles go here */
   }
 
-  @media ${device["pc"]} {
+  @media ${device.md} {
     #pcMenu {
       display: block;
     }
@@ -46,20 +47,20 @@ const HeaderLogo = styled.div`
   cursor: pointer;
 `;
 
-const Header = () => (
-  <HeaderWrapper>
-    <HeaderInner>
-      <HeaderLogo
-        onClick={() => {
-          location.href = "/";
-        }}
-      >
-        <img src="../source/images/logo_nn.png" />
-      </HeaderLogo>
-      <MobileMenu />
-      <PCMenu />
-    </HeaderInner>
-  </HeaderWrapper>
-);
+const Header = () => {
+  const history = useHistory();
+
+  return (
+    <HeaderWrapper>
+      <HeaderInner>
+        <HeaderLogo onClick={() => history.replace("/")}>
+          <img src="../source/images/logo_nn.png" />
+        </HeaderLogo>
+        <MobileMenu />
+        <PCMenu />
+      </HeaderInner>
+    </HeaderWrapper>
+  );
+};
 
 export default Header;

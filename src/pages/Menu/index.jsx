@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import styled from "styled-components";
 
 import Text from "components/Text";
@@ -15,7 +15,7 @@ const MenuSection = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  background: ${props => (props.background ? props.background : "white")};
+  background: ${(props) => (props.background ? props.background : "white")};
   border: none;
 `;
 
@@ -26,7 +26,7 @@ const MenuContentWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 10vw 0vw;
-  @media ${device["pc"]} {
+  @media ${device.md} {
     padding: 5vw 0vw;
   }
 `;
@@ -35,7 +35,7 @@ const FlexdirectionRow = styled.div`
   display: flex;
   flex-direction: row;
   margin: 10vw 0vw;
-  @media ${device["pc"]} {
+  @media ${device.md} {
     margin: 5vw 0vw;
   }
 `;
@@ -50,7 +50,7 @@ const FishGuideWrapper = styled.div`
   .fishHeight {
     height: 10vw;
   }
-  @media ${device["pc"]} {
+  @media ${device.md} {
     width: 60vw;
     margin: 3vw 0;
     .fish5 {
@@ -68,7 +68,7 @@ const FishTextWrapper = styled.div`
 const FishImage = styled.img`
   width: 20vw;
   height: 14vw;
-  @media ${device["pc"]} {
+  @media ${device.md} {
     width: 10vw;
     height: 7vw;
   }

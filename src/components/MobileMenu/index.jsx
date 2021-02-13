@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -84,15 +84,15 @@ const scrollTop = () => {
   window.scroll(0, 0);
 };
 
-const MobileMenuExit = (e: Event) => {
-  const toggle = document.querySelector("#menuToggle") as HTMLInputElement;
+const MobileMenuExit = (e) => {
+  const toggle = document.querySelector("#menuToggle");
   toggle.checked = false;
 };
 
 const MobileMenu = () => (
   <MenuWrapper className="mobileMenu" id="mobileMenu">
     <ToggleCheckBox type="checkbox" id="menuToggle" className="mobileMenu" />
-    <MenuSpan className="mobileMenu"></MenuSpan>
+    <MenuSpan className=""></MenuSpan>
     <MenuSpan className="mobileMenu"></MenuSpan>
     <MenuSpan className="mobileMenu"></MenuSpan>
     <SideMenuWrapper className="mobileMenu">

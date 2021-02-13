@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import styled from "styled-components";
 
 import AboutBanner from "components/AboutBanner";
@@ -16,10 +16,10 @@ const AboutSection = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  background: ${props => (props.background ? props.background : "white")};
+  background: ${(props) => (props.background ? props.background : "white")};
   border: none;
 
-  @media ${device["pc"]} {
+  @media ${device.md} {
     .pcContent {
       flex-direction: row-reverse;
     }
@@ -31,7 +31,7 @@ const AboutContentWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 15vw 0;
-  @media ${device["pc"]} {
+  @media ${device.md} {
     padding: 8vw 0;
   }
 `;
@@ -42,7 +42,7 @@ const AboutContentDynamicWrapper = styled.div`
   align-items: center;
   padding: 15vw 0;
 
-  @media ${device["pc"]} {
+  @media ${device.md} {
     flex-direction: row;
     padding: 8vw 0;
   }
@@ -51,7 +51,7 @@ const AboutContentDynamicWrapper = styled.div`
 const AboutImage = styled.img`
   width: 90vw;
 
-  @media ${device["pc"]} {
+  @media ${device.md} {
     width: 45vw;
     margin: 4vw;
   }
@@ -69,7 +69,7 @@ const AboutText = styled.div`
   font-size: 7vw;
   margin-top: 6vw;
 
-  @media ${device["pc"]} {
+  @media ${device.md} {
     font-size: 4vw;
   }
 `;

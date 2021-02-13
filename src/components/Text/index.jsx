@@ -1,31 +1,18 @@
-import * as React from "react";
+import React from "react";
 import styled from "styled-components";
 import device from "components/device";
 
-interface TextProps {
-  size?: string;
-  pcSize?: string;
-  color?: string;
-  margin?: string;
-  pcMargin?: string;
-  shadow?: string;
-  className?: string;
-  onClick?: any;
-  children: any;
-}
-
 const TextComponent = styled.div`
-  font-size: ${props => (props.size ? props.size : "5vw")};
+  font-size: ${(props) => (props.size ? props.size : "5vw")};
   font-weight: 600;
-  color: ${props => (props.color ? props.color : "rgb(53,7,7)")};
+  color: ${(props) => (props.color ? props.color : "rgb(53,7,7)")};
   font-family: "TlabShin", sans serif;
-  margin: ${props => (props.margin ? props.margin : "0 0")};
-  text-shadow: ${props => (props.shadow ? props.shadow : "none")};
-  @media ${device["pc"]} {
-    font-size: ${props =>
+  margin: ${(props) => (props.margin ? props.margin : "0 0")};
+  text-shadow: ${(props) => (props.shadow ? props.shadow : "none")};
+  @media ${device.md} {
+    font-size: ${(props) =>
       props.pcSize ? props.pcSize : props.size ? props.size : "5vw"};
-
-    margin: ${props =>
+    margin: ${(props) =>
       props.pcMargin ? props.pcMargin : props.margin ? props.margin : "0 0"};
   }
 `;
@@ -39,8 +26,8 @@ const Text = ({
   pcMargin = "",
   className,
   onClick,
-  children
-}: TextProps) => {
+  children,
+}) => {
   return (
     <TextComponent
       size={size}

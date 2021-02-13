@@ -4,30 +4,34 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "awesome-typescript-loader": "^5.2.1",
+    "@babel/cli": "^7.12.16",
+    "@babel/core": "^7.12.16",
+    "@babel/node": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-react": "^7.12.13",
     "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^2.0.7",
     "react-app-polyfill": "^1.0.5",
     "react-router-dom": "^5.1.2",
     "scriptjs": "^2.5.9",
     "styled-components": "^4.4.1",
     "styled-reset": "^4.0.9",
-    "typescript": "^3.7.4",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
-    "@types/react": "^16.9.17",
-    "@types/react-dom": "^16.9.4",
+    "babel-loader": "^8.2.2",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-router": "^5.2.0"
   },
   "scripts": {
     "start": "webpack --mode development",
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --mode development --open --hot",
-    "pub": "node ./server.ts"
+    "pub": "babel-node server.js"
   }
 }

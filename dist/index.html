@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -17,9 +17,17 @@
   </head>
   <body>
     <div id="root"></div>
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+    if(!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = "120dc66d89ba01";
+    if(window.wcs) {
+      wcs_do();
+    }
+    </script>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9fd031c9094f4fa118f39f83b2683468"
+    ></script>
   <script type="text/javascript" src="bundle.min.js"></script></body>
-  <script
-    type="text/javascript"
-    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9fd031c9094f4fa118f39f83b2683468"
-  ></script>
 </html>

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import styled from "styled-components";
 import device from "components/device";
 
@@ -6,7 +6,7 @@ const MainBannerWrapper = styled.div`
   position: relative;
   width: 100%;
   background-image: url("../source/images/banner_m.jpg");
-  @media ${device["mobile_wide"]} {
+  @media ${device.sm} {
     background-image: url("../source/images/banner_ver.1.jpg");
   }
   background-size: cover;
@@ -31,7 +31,7 @@ const MainBannerTextWrapper = styled.div`
 `;
 const MainBannerMainText = styled.div`
   font-size: 35vw;
-  @media ${device["pc"]} {
+  @media ${device.md} {
     font-size: 19vw;
     font-weight: 600;
   }
@@ -42,7 +42,7 @@ const MainBannerMainText = styled.div`
 `;
 const MainBannerSubText = styled.div`
   font-size: 10vw;
-  @media ${device["pc"]} {
+  @media ${device.md} {
     font-size: 7vw;
     font-weight: 550;
   }
@@ -53,7 +53,7 @@ const MainBannerSubText = styled.div`
 const MainBannerBlack = styled.div`
   width: 100%;
   height: 100vh;
-  @media ${device["pc"]} {
+  @media ${device.md} {
     height: 120vh;
   }
   background: rgba(0, 0, 0, 0.3);
